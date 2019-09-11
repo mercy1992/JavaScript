@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		document.write("<h5>JavaScript Switch</h5>");
+
+		var grade = 'B';
+		var result;
+		switch (grade) {
+		case 'A':
+			result = "A Grade";
+			break;
+		case 'B':
+			result = "B Grade";
+			break;
+		case 'C':
+			result = "C Grade";
+			break;
+		default:
+			result = "No Grade";
+		}
+		document.write(result);
+
+		
+		
+		document.write("<br>");
+		document.write("<br>");
+
+		
+		
+		var grade = 'B';
+		var result;
+		switch (grade) {
+		case 'A':
+			result += " A Grade";
+		case 'B':
+			result += " B Grade";
+		case 'C':
+			result += " C Grade";
+		default:
+			result += " No Grade";
+		}
+		document.write(result);
+	</script>
+</body>
+</html>

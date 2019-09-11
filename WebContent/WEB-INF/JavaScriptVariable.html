@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script>
+		document.write("<h5>Example of JavaScript variable</h5>");
+		
+		var x = 10;
+		var y = 20;
+		var z = x + y;
+		document.write(z);
+		
+		
+		document.write("<br>");
+		document.write("<h5>JavaScript local variable</h5>");
+		
+		function abc() {
+			var x = 10;//local variable 
+			if (x > 13) {
+				var y = 20;//JavaScript local variable 
+				document.write(y);
+				document.write("<br>");
+			} else {
+				document.write("else");
+				document.write("<br>");
+			}//or
+			document.write(x);
+		}
+		abc();
+
+		
+		document.write("<br>");
+		document.write("<h5>JavaScript global variable</h5>");
+		
+
+		var data = 200;//gloabal variable  
+		function a() {
+			document.writeln(data);
+		}
+		var mercy = 500;//gloabal variable 
+		function b() {
+			document.writeln(mercy);
+		}
+		//gloabal variable  
+		function c() {
+			document.writeln(data);
+		}
+		//gloabal variable 
+		function b() {
+			document.writeln(mercy);
+		}
+		a();//calling JavaScript function  
+		b();
+		c();
+		b();
+	</script>
+
+</body>
+</html>

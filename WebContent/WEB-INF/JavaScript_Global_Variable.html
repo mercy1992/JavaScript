@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var value = 50;//global variable  
+		function a() {
+			alert(value);
+		}
+		function b() {
+			alert(value);
+		}
+		b();
+
+		document.write("<h5>Declaring JavaScript global variable within function</h5>");
+		function m() {
+			window.value = 100;//declaring global variable by window object  
+		}
+		function n() {
+			alert(window.value);//accessing global variable from other function  
+		}
+		m();
+		n();
+
+		document.write("<h5>Internals of global variable in JavaScript</h5>");
+		var value = 50;
+		function a() {
+			alert(window.value);//accessing global variable   
+		}
+		a();
+	</script>
+</body>
+</html>
